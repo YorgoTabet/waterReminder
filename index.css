@@ -1,0 +1,100 @@
+*{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+body{
+    background-color: #6D6D6D;
+}
+#main{
+    margin: auto;
+    margin-top: 15px;
+    height: 350px;
+    width: 400px;
+    background-color: white;
+    border-radius: 25px;
+    padding-top: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+#reset{
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+h1, h5{
+
+    margin: auto;
+    width: 50%;
+    text-align: center;
+
+}
+h1{
+    font-size: 25;
+}
+h5{
+    margin-top: 50px;
+    font-size: 30;
+}
+
+#wave{
+    position: inherit;
+    max-width: 400px;
+}
+
+#wave1{
+    position: relative;
+    bottom: -50px;
+    width: 400px;
+    max-width: 400px;
+    height: 350px;
+    background: url(waves/wave.svg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size:400px;
+   
+}
+#wave2{
+    position: relative;
+    bottom: 300px;
+    width: 400px;
+    height: 350px;
+    background: url(waves/wave.svg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size:400px;
+   
+}
+#wave3{
+    position: relative;
+    bottom: 650px;
+    width: 400px;
+    height: 350px;
+    background: url(waves/wave.svg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size:400px;
+   
+}
+
+    
+
+
+
+#wave1{
+    animation: animate 10s linear infinite
+}
+#wave2{
+    animation: animate 15s linear infinite
+}
+#wave3{
+    animation: animate 20s linear infinite
+}
+@keyframes animate{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position: 800px;
+    }
+}
