@@ -1,4 +1,4 @@
- numOfSeconds = 10;
+ numOfSeconds = 61;
 // Update the count down every 1 second
 function resetTimer()
 {
@@ -21,7 +21,7 @@ function resetTimer()
       
       if (numOfSeconds < 0) {
         clearInterval(x);
-        numOfSeconds = 10;
+        numOfSeconds = 61;
         var audio = new Audio('splash.mp3');
         audio.play();
         document.getElementById('reset').style.visibility="visible";
